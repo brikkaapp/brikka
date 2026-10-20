@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://brikkaapp.github.io/brikka/logo.png" width="96" alt="Brikka">
+  <img src="logo.png" width="96" alt="Brikka">
 </p>
 
 <h1 align="center">Brikka</h1>
@@ -69,14 +69,14 @@ Descarga el `.exe`, ábrelo y sigue el instalador. Si Windows muestra un aviso d
 ### Linux
 Dos opciones:
 - **AppImage** — descárgalo, dale permiso de ejecución y ábrelo:
-```bash
+  ```bash
   chmod +x Brikka-Linux.AppImage
   ./Brikka-Linux.AppImage
-```
+  ```
 - **.deb** (Debian / Ubuntu):
-```bash
+  ```bash
   sudo dpkg -i brikka_*.deb
-```
+  ```
 
 ### Mac
 Próximamente. 🍎
@@ -96,6 +96,10 @@ Próximamente. 🍎
 Brikka es **local**: tus proyectos, precios y datos del despacho viven **solo en tu computadora**. No hay nube, no hay cuentas, no hay rastreo. Tú decides cuándo compartir un archivo `.brikka` o un PDF.
 
 ---
+
+<p align="center">
+  <img src="pato-pixel.png" width="340" alt="PATO PIXEL — Estudio de Software · Hecho en México">
+</p>
 
 <p align="center">
   Hecho con 🧱 por <b>PATO PIXEL</b> · <a href="https://brikkaapp.github.io/brikka">brikkaapp.github.io/brikka</a>
