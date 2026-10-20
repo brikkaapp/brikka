@@ -74,6 +74,31 @@
   .alt h2{font-size:20px;margin-top:0}
   .alt ul{margin:8px 0 0;padding-left:20px} .alt li{color:var(--ink-2);font-size:15px;margin:6px 0}
 
+  /* "¿qué significa invitar un café?" */
+  .explain{display:flex;gap:18px;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:20px 22px;margin-top:18px}
+  .explain .big{flex:none;font-size:42px;line-height:1}
+  .explain p{margin:0}
+  .eq{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px;margin:18px 0 4px;font-weight:800}
+  .eq span{background:var(--panel);border:1px solid var(--line-2);border-radius:999px;padding:8px 16px;font-size:15px}
+  .eq b{color:var(--accent);font-size:20px}
+  .hero .sub{font-size:13.5px;color:var(--muted);margin-top:12px}
+
+  @media (max-width:560px){ .explain{flex-direction:column;text-align:left;gap:10px} .explain .big{font-size:36px}
+    .eq{flex-direction:column;gap:6px} .eq b{transform:rotate(90deg)} }
+
+  /* confianza */
+  .trust{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;margin-top:18px}
+  .trust .card{border-left:4px solid #3f8f5a}
+  .trust .card h3{display:flex;gap:8px;align-items:center}
+  .check{background:#e6f3ea;color:#24683b;border:1px solid #bfdcc8;border-radius:14px;padding:16px 20px;margin-top:16px;font-size:15px}
+  .check code{font-family:ui-monospace,Consolas,monospace;font-weight:700;background:rgba(255,255,255,.6);padding:1px 6px;border-radius:6px;white-space:nowrap}
+  @media (prefers-color-scheme:dark){ .check{background:#1f3326;color:#bfe3c9;border-color:#2f5a3c} .check code{background:rgba(0,0,0,.25)} }
+
+  /* preguntas */
+  details{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 18px;margin-top:10px}
+  summary{cursor:pointer;font-weight:700;color:var(--ink);font-size:15.5px}
+  details p{margin:8px 0 2px;font-size:15px}
+
   footer{border-top:1px solid var(--line);margin-top:30px;padding:26px 0 48px;font-size:13px;color:var(--muted);text-align:center}
   footer .duck{width:38px;height:38px;image-rendering:pixelated;vertical-align:middle;margin-right:8px}
   strong{color:var(--ink)}
@@ -87,10 +112,21 @@
     <div class="logo">B</div>
     <h1>Brikka es gratis.<br><span class="hl">Y quiero que siga así.</span></h1>
     <p class="lead">Sin publicidad, sin suscripción y sin vender tus datos. Si Brikka te ahorra tiempo en tus presupuestos, un café ayuda a mantenerlo vivo. ☕</p>
-    <a class="btn-kofi" href="https://ko-fi.com/brikkapatopixel" target="_blank" rel="noopener">☕ Invitar un café</a>
+    <a class="btn-kofi" href="https://ko-fi.com/brikkapatopixel" target="_blank" rel="noopener">☕ Invitar un café (donar)</a>
+    <div class="sub">🔒 Donación voluntaria y segura con Ko-fi · Tarjeta o PayPal · Sin crear cuenta</div>
   </div>
 
   <hr class="divider">
+
+  <section>
+    <div class="eyebrow">¿QUÉ SIGNIFICA?</div>
+    <h2>"Invitar un café" = hacer una pequeña donación</h2>
+    <div class="explain">
+      <div class="big">☕</div>
+      <p>Es una forma amable que se usa en internet para decir <strong>"donar" o "apoyar"</strong>. No compras un café de verdad ni te llega nada a casa: simplemente das una <strong>aportación voluntaria</strong> (del tamaño que tú quieras) para que Brikka siga siendo gratis y mejorando. El "café" es solo la idea de algo pequeño, como invitarle un café a un amigo para darle las gracias.</p>
+    </div>
+    <div class="eq"><span>☕ Invitar un café</span><b>=</b><span>💛 Donar / apoyar</span><b>=</b><span>🧱 Brikka sigue gratis</span></div>
+  </section>
 
   <section>
     <div class="eyebrow">LA FILOSOFÍA</div>
@@ -117,10 +153,27 @@
     <h2>¿Nunca has donado? Es facilísimo</h2>
     <p>No necesitas crear ninguna cuenta. Toma menos de un minuto:</p>
     <div class="steps">
-      <div class="step"><div class="n">1</div><div><h3>Haz clic en "Invitar un café"</h3><p>Te abre Ko-fi, una página segura hecha para apoyar a creadores.</p></div></div>
+      <div class="step"><div class="n">1</div><div><h3>Haz clic en "Invitar un café (donar)"</h3><p>Te abre Ko-fi, una página segura hecha para apoyar a creadores.</p></div></div>
       <div class="step"><div class="n">2</div><div><h3>Elige cuánto quieres dar</h3><p>Desde el precio de un café, o la cantidad que tú quieras. Una sola vez o cada mes — tú decides.</p></div></div>
-      <div class="step"><div class="n">3</div><div><h3>Paga con tarjeta o PayPal</h3><p>Pago seguro con tu tarjeta de crédito/débito (o PayPal). No se guarda tu información.</p></div></div>
+      <div class="step"><div class="n">3</div><div><h3>Paga con tarjeta o PayPal</h3><p>El cobro lo hacen Stripe o PayPal, no Brikka. Yo nunca veo el número de tu tarjeta.</p></div></div>
       <div class="step"><div class="n">4</div><div><h3>¡Listo! 🎉</h3><p>Recibes un "gracias" de mi parte. Tu apoyo mantiene Brikka gratis para miles de personas más.</p></div></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow">🔒 TU SEGURIDAD</div>
+    <h2>¿Es seguro donar por aquí?</h2>
+    <p>Sí. Es normal tener dudas antes de pagar en internet, así que te explico exactamente cómo funciona:</p>
+    <div class="trust">
+      <div class="card"><h3>🏦 El pago lo procesa Stripe o PayPal</h3><p>Ko-fi usa a Stripe (tarjetas) y PayPal, dos de las empresas de pagos más usadas del mundo. Brikka nunca toca tu dinero en el camino ni tiene acceso a tu tarjeta.</p></div>
+      <div class="card"><h3>💳 Nunca veo tu tarjeta</h3><p>Tus datos bancarios los escribes en la página de pago de Stripe o PayPal. Yo no veo ni guardo el número de tu tarjeta ni tus contraseñas.</p></div>
+      <div class="card"><h3>👤 Sin crear cuenta</h3><p>Puedes donar como invitado. Solo pide un correo para enviarte tu comprobante. Tu mensaje lo puedes marcar como privado.</p></div>
+      <div class="card"><h3>🙌 100% voluntario</h3><p>No es una suscripción oculta: si eliges "una sola vez", se cobra una sola vez. Brikka es gratis y completo dones o no.</p></div>
+    </div>
+    <div class="check">
+      <strong>✅ Cómo saber que es el enlace correcto:</strong> la única página oficial para apoyar es
+      <code>ko-fi.com/brikkapatopixel</code> (con el candado 🔒 en la barra del navegador).
+      Nunca te voy a pedir dinero por WhatsApp, por transferencia a una cuenta personal ni por correo. Si alguien lo hace a nombre de Brikka, no es de PATO PIXEL.
     </div>
   </section>
 
@@ -139,9 +192,19 @@
   <div class="cta-box">
     <h2>¿Listo para apoyar a Brikka?</h2>
     <p>Cada aporte, por pequeño que sea, hace una diferencia enorme para un proyecto hecho por una sola persona.</p>
-    <a class="btn-kofi" href="https://ko-fi.com/brikkapatopixel" target="_blank" rel="noopener">☕ Invitar un café en Ko-fi</a>
-    <div class="reassure">100% voluntario · Brikka seguirá siendo gratis dones o no · Pago seguro</div>
+    <a class="btn-kofi" href="https://ko-fi.com/brikkapatopixel" target="_blank" rel="noopener">☕ Invitar un café (donar) en Ko-fi</a>
+    <div class="reassure">🔒 Pago procesado por Stripe o PayPal · 100% voluntario · Brikka seguirá siendo gratis dones o no</div>
   </div>
+
+  <section>
+    <div class="eyebrow">PREGUNTAS FRECUENTES</div>
+    <h2>Dudas comunes</h2>
+    <details><summary>¿Tengo que pagar para usar Brikka?</summary><p>No. Brikka es gratis y completo. Donar no desbloquea nada: es solo una forma de dar las gracias y ayudar a que siga existiendo.</p></details>
+    <details><summary>¿Me van a cobrar cada mes?</summary><p>Solo si tú eliges la opción mensual. Si eliges "una sola vez", es un único cobro. Si eliges mensual, lo puedes cancelar cuando quieras.</p></details>
+    <details><summary>¿Puedo pagar en pesos mexicanos?</summary><p>Ko-fi puede mostrar el monto en otra moneda (por ejemplo dólares); tu banco hace la conversión automáticamente, como en cualquier compra en internet.</p></details>
+    <details><summary>¿Qué datos míos recibo yo?</summary><p>El nombre que tú pongas, tu correo y tu mensaje (si escribes uno). Según el método de pago, Stripe o PayPal también me muestran tu nombre. Nunca el número de tu tarjeta. No comparto tus datos con nadie.</p></details>
+    <details><summary>¿Y si me equivoqué de cantidad?</summary><p>Escríbeme desde mi página de Ko-fi y lo resolvemos; los reembolsos se hacen desde Stripe o PayPal. También tienes la protección normal de tu banco o de PayPal.</p></details>
+  </section>
 
   <section>
     <div class="alt">
