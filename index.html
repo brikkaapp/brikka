@@ -192,8 +192,13 @@
   .kofi-foot a{color:var(--accent);font-weight:600}
   .nav-kofi{background:#FF5E5B;color:#fff!important;padding:8px 15px;border-radius:999px;font-weight:700;font-size:14px;white-space:nowrap;transition:filter .15s}
   .nav-kofi:hover{filter:brightness(.92)}
-  .nav-links a.nav-fb{width:36px;height:36px;padding:0;border-radius:9px;display:grid;place-items:center;background:var(--accent-soft);color:var(--accent);border:1px solid color-mix(in srgb,var(--accent) 30%,var(--line))}
-  .nav-links a.nav-fb:hover{background:var(--accent);color:#fff;border-color:var(--accent)}
+  .nav-links a.nav-soc{width:36px;height:36px;padding:0;border-radius:9px;display:grid;place-items:center;background:var(--panel);border:1px solid var(--line-2);transition:border-color .15s,transform .08s}
+  .nav-links a.nav-soc .soc-ic{width:20px;height:20px}
+  .nav-links a.nav-fb{color:#1877F2}
+  .nav-links a.nav-fb:hover{border-color:#1877F2}
+  .nav-links a.nav-ig:hover{border-color:#D62976}
+  @media(max-width:420px){.nav-in{gap:8px}.nav-links{gap:4px}.nav-links a.nav-soc{width:32px;height:32px}.nav-kofi{padding:7px 11px}}
+  @media(max-width:380px){.nav-in .brand{font-size:0;gap:0}}
   .final .btn.light{background:#fff;color:var(--accent-dark);border-color:#fff}
 
   footer{border-top:1px solid var(--line);margin-top:20px;padding-block:34px;color:var(--muted);font-size:13px}
@@ -209,10 +214,12 @@
   @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
   html{scroll-behavior:smooth}
   :focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:6px}
-  .fb-ic{width:18px;height:18px;flex:none}
-  .fb-link{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:14px;color:var(--accent);background:var(--accent-soft);border:1px solid color-mix(in srgb,var(--accent) 30%,var(--line));padding:8px 16px;border-radius:999px;text-decoration:none;transition:background .15s,color .15s,border-color .15s}
-  .fb-link:hover{background:var(--accent);color:#fff;border-color:var(--accent);text-decoration:none}
-  .fb-row{text-align:center;margin-top:16px}
+  .soc-ic{width:18px;height:18px;flex:none}
+  .soc-row{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:16px}
+  .soc-link{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:14px;color:#fff;padding:8px 16px;border-radius:999px;text-decoration:none;transition:filter .15s}
+  .soc-link:hover{filter:brightness(1.1);color:#fff;text-decoration:none}
+  .soc-fb{background:#1877F2}
+  .soc-ig{background:linear-gradient(45deg,#F58529,#DD2A7B 50%,#8134AF 80%,#515BD4)}
 </style>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Silkscreen:wght@400;700&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&display=swap">
 
@@ -224,7 +231,8 @@
       <a href="#descargar" class="hide-sm">Descargar</a>
       <a href="#incluye" class="hide-sm">Qué incluye</a>
       <a href="#instalar" class="hide-sm">Instalar</a>
-      <a href="https://www.facebook.com/profile.php?id=61594160775951" class="nav-fb" target="_blank" rel="noopener" title="Brikka en Facebook" aria-label="Brikka en Facebook (se abre en otra pestaña)"><svg class="fb-ic" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg></a>
+      <a href="https://www.facebook.com/profile.php?id=61594160775951" class="nav-soc nav-fb" target="_blank" rel="noopener" title="Brikka en Facebook" aria-label="Brikka en Facebook (se abre en otra pestaña)"><svg class="soc-ic" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg></a>
+      <a href="https://www.instagram.com/brikka_by_patopixel/" class="nav-soc nav-ig" target="_blank" rel="noopener" title="Brikka en Instagram" aria-label="Brikka en Instagram (se abre en otra pestaña)"><svg class="soc-ic" viewBox="0 0 24 24" aria-hidden="true"><defs><linearGradient id="ig-grad" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#FEDA75"/><stop offset=".3" stop-color="#FA7E1E"/><stop offset=".6" stop-color="#D62976"/><stop offset="1" stop-color="#4F5BD5"/></linearGradient></defs><rect x="3" y="3" width="18" height="18" rx="5.2" fill="none" stroke="url(#ig-grad)" stroke-width="2.2"/><circle cx="12" cy="12" r="4.1" fill="none" stroke="url(#ig-grad)" stroke-width="2.2"/><circle cx="17.2" cy="6.8" r="1.35" fill="url(#ig-grad)"/></svg></a>
       <a href="apoyar.html" class="nav-kofi">☕ Apoyar</a>
       <button class="icon-btn" id="theme" title="Cambiar tema" aria-label="Cambiar tema"><span class="msym" id="theme-ic">dark_mode</span></button>
     </nav>
@@ -458,8 +466,8 @@
     <img src="pato-pixel-duck.png" alt="PATO PIXEL">
     <div><b>PATO PIXEL</b><span>Estudio de Software · Hecho en México</span></div>
   </div>
-  <div class="wrap fb-row">
-    <a class="fb-link" href="https://www.facebook.com/profile.php?id=61594160775951" target="_blank" rel="noopener" aria-label="Brikka en Facebook (se abre en otra pestaña)"><svg class="fb-ic" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg> Síguenos en Facebook</a>
+  <div class="wrap soc-row">
+    <a class="soc-link soc-fb" href="https://www.facebook.com/profile.php?id=61594160775951" target="_blank" rel="noopener" aria-label="Brikka en Facebook (se abre en otra pestaña)"><svg class="soc-ic" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg> Facebook</a><a class="soc-link soc-ig" href="https://www.instagram.com/brikka_by_patopixel/" target="_blank" rel="noopener" aria-label="Brikka en Instagram (se abre en otra pestaña)"><svg class="soc-ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5.2" fill="none" stroke="currentColor" stroke-width="2.2"/><circle cx="12" cy="12" r="4.1" fill="none" stroke="currentColor" stroke-width="2.2"/><circle cx="17.2" cy="6.8" r="1.35" fill="currentColor"/></svg> Instagram</a>
   </div>
   <div class="wrap kofi-foot" style="text-align:center;margin-top:16px;font-size:13px">
     <a href="apoyar.html">☕ Apoyar a Brikka</a>
