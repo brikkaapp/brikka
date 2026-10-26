@@ -5,7 +5,7 @@
 <meta name="claude:viewport-fit-sides" content="cover">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <style>
-  /* Layout: nav fija → hero con logo y descarga doble → comparación 2 versiones →
+  /* Layout: nav fija → hero con descarga → Brikka + asistente IA opcional →
      descarga por sistema operativo → qué incluye → cómo instalar → requisitos → footer.
      Marca Brikka: terracota + crema + wordmark pixel (Silkscreen), cuerpo en Archivo. */
   :root{
@@ -227,7 +227,7 @@
   <div class="wrap nav-in">
     <div class="brand"><span class="logo">B</span>BRIKKA</div>
     <nav class="nav-links">
-      <a href="#versiones" class="hide-sm">Versiones</a>
+      <a href="#versiones" class="hide-sm">Asistente IA</a>
       <a href="#descargar" class="hide-sm">Descargar</a>
       <a href="#incluye" class="hide-sm">Qué incluye</a>
       <a href="#instalar" class="hide-sm">Instalar</a>
@@ -245,16 +245,16 @@
     <div>
       <span class="eyebrow"><span class="msym">cottage</span> Para estudiantes y profesionales de la construcción</span>
       <h1 class="title">Tus <em>catálogos de conceptos</em> y presupuestos de obra, en tu computadora.</h1>
-      <p class="lead">Brikka arma presupuestos, precios de insumos, análisis de P.U., planos y checklists de obra. Gratis, sin suscripción y funciona sin internet. Ahora también con un asistente de IA que corre en tu propia máquina.</p>
+      <p class="lead">Brikka arma presupuestos, precios de insumos, análisis de P.U., planos y checklists de obra. Gratis, sin suscripción y funciona sin internet. Y si quieres, con un asistente de IA que corre en tu propia máquina.</p>
       <div class="cta-row">
-        <button class="btn primary" data-dl data-app="Brikka" data-ver="1.6.1">
+        <button class="btn primary" data-dl data-app="Brikka" data-ver="3.0.1">
           <span class="msym">download</span>
           <span>Descargar Brikka<small id="hero-os-base">para Windows · gratis</small></span>
         </button>
-        <button class="btn ia" data-dl data-app="Brikka IA" data-ver="2.2.1">
+        <a class="btn ia" href="#versiones">
           <span class="msym">auto_awesome</span>
-          <span>Descargar Brikka IA<small id="hero-os-ia">con asistente de IA</small></span>
-        </button>
+          <span>Asistente IA<small>opcional · incluido</small></span>
+        </a>
       </div>
       <div class="trust">
         <span><span class="dot"></span> 100% gratis</span>
@@ -283,44 +283,44 @@
 <section id="versiones">
   <div class="wrap">
     <div class="sec-head">
-      <div class="kicker">Dos versiones · las dos gratis</div>
-      <h2 class="sh">Elige Brikka o Brikka IA</h2>
-      <p class="sh-sub">Las dos hacen presupuestos completos y conviven en la misma computadora. La diferencia es el asistente de inteligencia artificial.</p>
+      <div class="kicker">Nuevo en la versión 3.0 · una sola app</div>
+      <h2 class="sh">Brikka, con asistente de IA opcional</h2>
+      <p class="sh-sub">Ya no hay que elegir entre Brikka y Brikka IA: ahora es una sola app. Funciona completa sin la IA, y el asistente está ahí para cuando lo quieras usar.</p>
     </div>
     <div class="vers">
       <div class="vcard">
         <div class="vhead">
           <span class="vlogo base">B</span>
-          <div><h3>Brikka</h3><div class="ver-no">Versión 1.6.1 · sin IA</div></div>
+          <div><h3>Brikka</h3><div class="ver-no">Versión 3.0.1 · Windows y Linux</div></div>
         </div>
-        <p class="vdesc">La herramienta completa de presupuestos. Ligera y directa: ideal si tu equipo es modesto o no necesitas el asistente.</p>
+        <p class="vdesc">La herramienta completa de presupuestos y control de obra, desde el primer día y sin instalar nada más.</p>
         <ul class="feat">
           <li><span class="ck msym">check</span> Catálogo de conceptos por partidas y subpartidas</li>
           <li><span class="ck msym">check</span> Precios de insumos y análisis de precios unitarios</li>
-          <li><span class="ck msym">check</span> Planos y gráficos (imagen, PDF, DWG, SketchUp)</li>
-          <li><span class="ck msym">check</span> Checklists de obra y seguimiento de avance</li>
+          <li><span class="ck msym">check</span> Estimaciones, gastos, compras y bitácora de obra</li>
+          <li><span class="ck msym">check</span> Planos, checklists y seguimiento de avance</li>
           <li><span class="ck msym">check</span> Exporta a PDF y Excel · búsqueda con Ctrl+K · glosario</li>
         </ul>
         <div class="grow"></div>
-        <button class="btn primary" data-dl data-app="Brikka" data-ver="1.6.1"><span class="msym">download</span> Descargar Brikka</button>
+        <button class="btn primary" data-dl data-app="Brikka" data-ver="3.0.1"><span class="msym">download</span> Descargar Brikka</button>
       </div>
 
       <div class="vcard pro">
-        <span class="vtag">Con IA</span>
+        <span class="vtag">Opcional</span>
         <div class="vhead">
-          <span class="vlogo pro">B</span>
-          <div><h3>Brikka IA</h3><div class="ver-no">Versión 2.2.1 · con asistente</div></div>
+          <span class="vlogo pro"><span class="msym">auto_awesome</span></span>
+          <div><h3>Asistente IA</h3><div class="ver-no">Incluido · se activa con Ollama (gratis)</div></div>
         </div>
-        <p class="vdesc">Todo lo de Brikka, más un asistente de IA que corre en tu computadora con Ollama: privado, sin internet y sin costo.</p>
+        <p class="vdesc">Un asistente que corre en tu computadora: privado, sin internet y sin costo. Si no lo usas, no estorba.</p>
         <ul class="feat">
-          <li><span class="ck ia msym">auto_awesome</span> <b>Todo lo de Brikka</b>, igual de completo</li>
-          <li><span class="ck ia msym">check</span> Asistente que entiende tu proyecto y resume el avance</li>
-          <li><span class="ck ia msym">check</span> Te ayuda a redactar descripciones y explicar términos</li>
-          <li><span class="ck ia msym">check</span> 100% local con Ollama · tus datos nunca salen de tu PC</li>
+          <li><span class="ck ia msym">check</span> Entiende tu proyecto y resume el avance</li>
+          <li><span class="ck ia msym">check</span> Te ayuda a redactar descripciones y explica términos</li>
+          <li><span class="ck ia msym">check</span> Para activarlo, abre el Asistente IA: Brikka te guía paso a paso para instalar Ollama y bajar el modelo, sin usar la terminal</li>
+          <li><span class="ck ia msym">check</span> 100% local · tus datos nunca salen de tu PC</li>
           <li><span class="ck ia msym">check</span> La IA nunca inventa precios: tú los capturas y controlas</li>
         </ul>
         <div class="grow"></div>
-        <button class="btn ia" data-dl data-app="Brikka IA" data-ver="2.2.1"><span class="msym">download</span> Descargar Brikka IA</button>
+        <a class="btn ia" href="https://ollama.com/download" target="_blank" rel="noopener"><span class="msym">open_in_new</span> Ollama (opcional)</a>
       </div>
     </div>
   </div>
@@ -341,24 +341,17 @@
       <button class="os-tab" role="tab" data-os="linux"><svg class="brand-ic" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c-1.9 0-3 1.7-3 3.6 0 1.2.1 2 .1 2.7 0 .8-1.4 2.2-2.3 4.1C6 14 5 15.5 5 17c0 1 .7 1.3 1.6 1.6.3.9 1 1.4 2 1.4.6 0 1-.2 1.4-.5h4c.4.3.8.5 1.4.5 1 0 1.7-.5 2-1.4.9-.3 1.6-.6 1.6-1.6 0-1.5-1-3-1.8-4.6-.9-1.9-2.3-3.3-2.3-4.1 0-.7.1-1.5.1-2.7C15 3.7 13.9 2 12 2zm-1.6 3.3c.5 0 .9.5.9 1.1s-.4 1.1-.9 1.1-.9-.5-.9-1.1.4-1.1.9-1.1zm3.2 0c.5 0 .9.5.9 1.1s-.4 1.1-.9 1.1-.9-.5-.9-1.1.4-1.1.9-1.1z"/></svg> Linux</button>
     </div>
 
-    <div class="dl-grid">
+    <div class="dl-grid" style="grid-template-columns:1fr;max-width:620px;margin-left:auto;margin-right:auto">
       <div class="dl-card">
         <span class="vlogo base">B</span>
         <div class="dl-meta">
-          <b>Brikka <span class="ver-no">1.6.1</span></b>
-          <div class="sub" id="dl-base-sub">Windows 10/11 · 64 bits · ~110 MB</div>
+          <b>Brikka <span class="ver-no">3.0.1</span></b>
+          <div class="sub" id="dl-base-sub">Windows 10/11 · 64 bits · ~112 MB</div>
         </div>
         <a class="btn primary" id="dl-base-link" href="https://github.com/brikkaapp/brikka/releases/latest/download/Brikka-Setup.exe"><span class="msym">download</span> <span id="dl-base-btn">Descargar</span></a>
       </div>
-      <div class="dl-card">
-        <span class="vlogo pro">B</span>
-        <div class="dl-meta">
-          <b>Brikka IA <span class="ver-no">2.2.1</span></b>
-          <div class="sub" id="dl-ia-sub">Windows 10/11 · 64 bits · ~110 MB · requiere Ollama</div>
-        </div>
-        <a class="btn ia" id="dl-ia-link" href="https://github.com/brikkaapp/brikka/releases/latest/download/Brikka-IA-Setup.exe"><span class="msym">download</span> <span id="dl-ia-btn">Descargar</span></a>
-      </div>
     </div>
+    <p class="sh-sub" style="text-align:center;margin:14px auto 0;font-size:14px">¿Ya tenías Brikka o Brikka IA? Instala encima: tus proyectos, precios y ajustes se conservan, y la versión vieja se quita sola.</p>
 
     <div class="note" id="dl-note" role="status">
       <span class="msym">info</span>
@@ -380,7 +373,7 @@
       <div class="fcard"><div class="fi"><span class="msym">image</span></div><h4>Planos y gráficos</h4><p>Imágenes, PDF, DWG y SketchUp viven dentro del archivo del proyecto, junto a sus conceptos.</p></div>
       <div class="fcard"><div class="fi"><span class="msym">checklist</span></div><h4>Checklists y avance</h4><p>Trámites, obra negra, acabados… marca avances por concepto y por etapa.</p></div>
       <div class="fcard"><div class="fi"><span class="msym">description</span></div><h4>Exporta e imprime</h4><p>Genera PDF y Excel con tu despacho y tus datos, listos para enviar al cliente.</p></div>
-      <div class="fcard ia"><div class="fi"><span class="msym">auto_awesome</span></div><h4>Asistente IA <span style="font-size:11px;color:var(--ia);font-weight:800">(Brikka IA)</span></h4><p>Pregúntale sobre tu proyecto, pídele redacciones o que explique términos. Privado, con Ollama local.</p></div>
+      <div class="fcard ia"><div class="fi"><span class="msym">auto_awesome</span></div><h4>Asistente IA <span style="font-size:11px;color:var(--ia);font-weight:800">(opcional)</span></h4><p>Pregúntale sobre tu proyecto, pídele redacciones o que explique términos. Privado, con Ollama local.</p></div>
     </div>
   </div>
 </section>
@@ -393,9 +386,9 @@
       <h2 class="sh">Listo en un par de minutos</h2>
     </div>
     <div class="steps">
-      <div class="step"><h4>Descarga el instalador</h4><p>Elige Brikka o Brikka IA para tu sistema y descarga el archivo.</p></div>
+      <div class="step"><h4>Descarga el instalador</h4><p>Elige tu sistema (Windows o Linux) y descarga el archivo.</p></div>
       <div class="step"><h4>Ábrelo e instala</h4><p>Doble clic al instalador y sigue los pasos: <code>Siguiente → Instalar → Finalizar</code>.</p></div>
-      <div class="step"><h4>¡Empieza a presupuestar!</h4><p>Crea tu primer catálogo. Para Brikka IA, con Ollama abierto el asistente se conecta solo.</p></div>
+      <div class="step"><h4>¡Empieza a presupuestar!</h4><p>Crea tu primer catálogo. Si quieres el asistente, ábrelo y Brikka te dice cómo activarlo.</p></div>
     </div>
     <div class="callout">
       <span class="msym">verified_user</span>
@@ -412,10 +405,10 @@
         <h3><span class="msym">desktop_windows</span> Requisitos</h3>
         <div class="req">
           <div><span class="k">Sistema</span><span>Windows 10/11 (64 bits) o Linux (AppImage, 64 bits). Mac próximamente.</span></div>
-          <div><span class="k">Memoria</span><span>4 GB de RAM para Brikka. 8 GB o más para el asistente de Brikka IA.</span></div>
+          <div><span class="k">Memoria</span><span>4 GB de RAM. 8 GB o más si vas a usar el asistente de IA.</span></div>
           <div><span class="k">Espacio</span><span>~250 MB. Los modelos de IA ocupan aparte, según el que elijas.</span></div>
           <div><span class="k">Internet</span><span>No se necesita. Todo funciona y se guarda en tu computadora.</span></div>
-          <div><span class="k">Para la IA</span><span>Ollama (gratis) instalado y un modelo descargado, p. ej. <code>llama3.2</code>.</span></div>
+          <div><span class="k">Para la IA</span><span>Opcional: Ollama (gratis). Brikka te guía para instalarlo y bajar el modelo (desde 1.3 GB).</span></div>
         </div>
       </div>
       <div class="panel">
@@ -437,8 +430,7 @@
       <h2>Empieza gratis hoy</h2>
       <p>Sin registro, sin tarjeta, sin suscripción. Descarga y presupuesta.</p>
       <div class="cta-row">
-        <button class="btn light" data-dl data-app="Brikka" data-ver="1.6.1"><span class="msym">download</span> Descargar Brikka</button>
-        <button class="btn ghost" data-dl data-app="Brikka IA" data-ver="2.2.1"><span class="msym">auto_awesome</span> Descargar Brikka IA</button>
+        <button class="btn light" data-dl data-app="Brikka" data-ver="3.0.1"><span class="msym">download</span> Descargar Brikka</button>
       </div>
     </div>
   </div>
@@ -499,9 +491,9 @@
   // ---- enlaces reales de descarga (GitHub Releases) ----
   var BASEURL = "https://github.com/brikkaapp/brikka/releases/latest/download/";
   var DL = {
-    win:   { base: BASEURL + "Brikka-Setup.exe",       ia: BASEURL + "Brikka-IA-Setup.exe" },
-    linux: { base: BASEURL + "Brikka-Linux.AppImage",  ia: BASEURL + "Brikka-IA-Linux.AppImage" },
-    mac:   { base: "", ia: "" }
+    win:   { base: BASEURL + "Brikka-Setup.exe" },
+    linux: { base: BASEURL + "Brikka-Linux.AppImage" },
+    mac:   { base: "" }
   };
 
   // ---- detección de SO ----
@@ -514,7 +506,6 @@
   var curOS = detect();
   var tabs = Array.prototype.slice.call(document.querySelectorAll(".os-tab"));
   var baseLink = document.getElementById("dl-base-link");
-  var iaLink = document.getElementById("dl-ia-link");
   var note = document.getElementById("dl-note"), noteText = document.getElementById("dl-note-text");
 
   function setLink(a, url, ready){
@@ -527,16 +518,12 @@
     tabs.forEach(function(t){ t.setAttribute("aria-selected", t.dataset.os===os ? "true":"false"); });
     var label = ADJ[os], ready = READY[os];
     document.getElementById("hero-os-base").textContent = ready ? ("para " + label + " · gratis") : (label + " · próximamente");
-    document.getElementById("hero-os-ia").textContent = ready ? ("para " + label + " · con IA") : (label + " · próximamente");
-    var sys = os==="win" ? "Windows 10/11 · 64 bits · ~110 MB" : os==="linux" ? "Linux · AppImage · ~127 MB" : label + " · ~110 MB";
+    var sys = os==="win" ? "Windows 10/11 · 64 bits · ~112 MB" : os==="linux" ? "Linux · AppImage · ~127 MB" : label + " · ~112 MB";
     document.getElementById("dl-base-sub").textContent = sys + (ready?"":" · próximamente");
-    document.getElementById("dl-ia-sub").textContent = sys + " · requiere Ollama" + (ready?"":" · próximamente");
     document.getElementById("dl-base-btn").textContent = ready ? "Descargar" : "Próximamente";
-    document.getElementById("dl-ia-btn").textContent = ready ? "Descargar" : "Próximamente";
     setLink(baseLink, DL[os].base, ready);
-    setLink(iaLink, DL[os].ia, ready);
     if(os==="linux" && ready){
-      noteText.innerHTML = "En Linux, descarga el <b>AppImage</b>, dale permiso de ejecución (clic derecho → Propiedades → Permitir ejecutar como programa, o <code>chmod +x</code>) y ábrelo con doble clic — no necesita instalación.";
+      noteText.innerHTML = "En Linux, descarga el <b>AppImage</b>, dale permiso de ejecución (clic derecho → Propiedades → Permitir ejecutar como programa, o <code>chmod +x</code>) y ábrelo con doble clic — no necesita instalación. En Ubuntu 22.04 o más nuevo, si no abre, instala antes <code>libfuse2</code> (<code>sudo apt install libfuse2</code>; en 24.04 es <code>libfuse2t64</code>).";
       note.classList.add("show");
     } else if(ready){
       note.classList.remove("show");

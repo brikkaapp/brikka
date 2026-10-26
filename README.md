@@ -24,14 +24,24 @@ Brikka es una aplicación de escritorio (Windows, Linux y pronto Mac) para armar
 - 📦 **Biblioteca de insumos regionales** — trae ~50 insumos típicos de México (incluido **BTC**, bloque de tierra comprimida). Los precios empiezan en $0 para que captures los de **tu** región — Brikka nunca inventa precios.
 - 💰 **Cierre del presupuesto** — aplica tus **indirectos, financiamiento, imprevistos, utilidad e IVA** configurables, y te da el **Subtotal → Total** con importe en letra.
 - 📈 **Estimaciones por corte** — cobra al cliente **solo lo avanzado en cada periodo** (ver abajo).
-- 🧾 **Gastos contra presupuesto** — registra lo que realmente gastas (facturas, raya, destajo) y compáralo con lo presupuestado por partida y concepto. ⭐ *Nuevo*
-- 📓 **Bitácora de obra** — notas diarias con clima, personal, fotos, incidencias y avance fechado; modo interno u obra pública con firmas. ⭐ *Nuevo*
-- 🛒 **Compras** — órdenes de compra, recepciones en obra y facturas que pasan solas a Gastos, con alertas de sobreprecio. ⭐ *Nuevo*
+- 🧾 **Gastos contra presupuesto** — registra lo que realmente gastas (facturas, raya, destajo) y compáralo con lo presupuestado por partida y concepto.
+- 📓 **Bitácora de obra** — notas diarias con clima, personal, fotos, incidencias y avance fechado; modo interno u obra pública con firmas.
+- 🛒 **Compras** — órdenes de compra, recepciones en obra y facturas que pasan solas a Gastos, con alertas de sobreprecio.
 - ✅ **Checklists por etapa** — trámites, preliminares, obra negra, acabados y entrega, con avance por concepto.
 - 📐 **Planos y gráficos** — guarda imágenes, PDF, DWG y SketchUp dentro del mismo archivo del proyecto.
-- 📄 **Exporta a PDF y Excel** — catálogos "para cotizar", presupuestos completos y estimaciones listas para firmar.
+- 📄 **Exporta a PDF y Excel** — catálogos "para cotizar", presupuestos completos y estimaciones listas para firmar, en Carta, Oficio o A4. El Excel lleva fórmulas que dan lo mismo que Brikka.
 
 Cada proyecto es **un solo archivo `.brikka`** que puedes copiar a una USB o enviar por correo.
+
+## Lo nuevo en Brikka 3.0
+
+- **Una sola app.** Brikka y Brikka IA ahora son lo mismo: Brikka, con el asistente de IA **opcional** ya incluido. Si tenías cualquiera de las dos, instala encima y tus proyectos, precios y ajustes se conservan.
+- El asistente te guía paso a paso para activarlo (instalar Ollama y bajar el modelo), **sin usar la terminal**.
+- **Cálculos verificados** con más de 130 pruebas automáticas: estimaciones por cantidad ejecutada, anticipo y 5 al millar, P.U. directo o integrado.
+- **Excel de la estimación** y Excel del catálogo con fórmulas.
+- PDF en **Carta, Oficio o A4**, con encabezado en cada hoja y **firmas** a tu gusto (Elaboró, Revisó, Autorizó).
+- Búsqueda (Ctrl+K) que encuentra aunque escribas con faltas.
+- Proyectos grandes abren sin congelarse; aviso si el mismo proyecto está abierto en otra ventana.
 
 ---
 
@@ -39,27 +49,20 @@ Cada proyecto es **un solo archivo `.brikka`** que puedes copiar a una USB o env
 
 Una **estimación** es el documento con el que cobras **solo lo que se avanzó en un periodo** (una semana, una quincena…). Así funciona en Brikka:
 
-1. Durante el periodo marcas el **% de avance** de cada concepto (en el Catálogo o en el Checklist).
+1. Durante el periodo capturas la **cantidad ejecutada** de cada concepto (por ejemplo 100 m² de 1,234 m²) en el Catálogo o en la Bitácora, o su % de avance.
 2. Al cierre creas un **corte**: Brikka toma una "foto" del avance de ese momento, con sus precios.
-3. Brikka calcula lo de **este periodo = lo ejecutado hasta hoy − lo ya cobrado en el corte anterior** (en pesos, así cuadra aunque cambies cantidades o precios entre cortes), y le aplica tus indirectos, utilidad e IVA.
-4. Exportas el **PDF de la estimación**, listo para firmar y cobrar.
+3. Brikka calcula lo de **este periodo = lo ejecutado hasta hoy − lo ya cobrado en el corte anterior** (en pesos, así cuadra aunque cambies cantidades o precios entre cortes), y le aplica tus indirectos, utilidad, anticipo, IVA y 5 al millar si aplica.
+4. Exportas la estimación en **PDF o Excel**, lista para firmar y cobrar.
 
 El avance se pondera por dinero (no por número de partidas), así que la estimación refleja el valor real ejecutado.
 
 ---
 
-## Brikka vs Brikka IA
+## Asistente de IA (opcional)
 
-| | **Brikka** | **Brikka IA** |
-|---|:---:|:---:|
-| Presupuestos, APU, estimaciones, checklists, planos | ✅ | ✅ |
-| Gastos, bitácora y compras de obra | ✅ | ✅ |
-| Asistente de IA que te ayuda con la obra | — | ✅ |
-| Funciona 100% sin internet | ✅ | ✅ |
+Brikka trae un asistente que corre **en tu propia computadora** con [Ollama](https://ollama.com) (gratis). No manda tus datos a ningún servidor y no cuesta suscripción. **Brikka funciona completo sin él**: si quieres usarlo, abre el *Asistente IA* y Brikka te guía para instalar Ollama y descargar el modelo con un clic.
 
-**Brikka IA** agrega un asistente que corre **en tu propia computadora** con [Ollama](https://ollama.com) (gratis). No manda tus datos a ningún servidor y no cuesta suscripción. Si no tienes Ollama instalado, la app te guía para instalarlo; mientras tanto, todo lo demás funciona igual.
-
-> El asistente no es fuente de precios: los precios solo vienen de tus **Precios de insumos**. La IA no puede cambiar nada de tu proyecto, y si en una respuesta menciona precios que no salen de tus insumos, Brikka IA te lo advierte.
+> El asistente no es fuente de precios: los precios solo vienen de tus **Precios de insumos**. La IA no puede cambiar nada de tu proyecto, y si en una respuesta menciona precios que no salen de tus insumos, Brikka te lo advierte.
 
 ---
 
@@ -84,6 +87,9 @@ sudo apt install libfuse2      # en Ubuntu 24.04: sudo apt install libfuse2t64
 ### Comprobar la descarga (opcional)
 Cada versión trae un archivo `SHA256SUMS.txt` en [Releases](https://github.com/brikkaapp/brikka/releases). En Windows puedes comparar con `certutil -hashfile Brikka-Setup.exe SHA256`; en Linux con `sha256sum Brikka-Linux.AppImage`.
 
+### Si compartes proyectos con otras personas
+Pídeles que usen la versión más reciente. Brikka 1.5 y Brikka IA 2.1 (o anteriores) abren los proyectos nuevos, pero **al guardar borran** Gastos, Bitácora y Compras.
+
 ### Mac
 Próximamente. 🍎
 
@@ -93,7 +99,7 @@ Próximamente. 🍎
 
 - **Windows** 10 u 11 (64 bits) · **Linux** 64 bits · Mac (próximamente)
 - No necesita internet ni cuenta.
-- **Brikka IA** además: [Ollama](https://ollama.com) instalado y un modelo descargado (por ejemplo `qwen2.5`).
+- Para el asistente (opcional): [Ollama](https://ollama.com) y 8 GB de RAM o más. Brikka te guía para instalarlo.
 
 ---
 
